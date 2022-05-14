@@ -1,0 +1,103 @@
+.contact_section{
+    padding-top: 120px;
+    padding-bottom: 90px;
+    position: relative;
+    @include for-phonePr-only{
+        padding-top: 0;
+    }
+    @include for-phone-max-767{
+        padding-top: 0;
+    }
+
+    .head_title{
+        text-align: center;
+        font-size: 36px;
+        line-height: 1.1;
+        margin-bottom: 60px;
+        text-transform: capitalize;
+        font-weight: 800;
+        position: relative;
+    }
+    .contact-info-box{
+        margin-bottom: 30px;
+        .info-box{
+            text-align: center;
+            position: relative;
+            background: #f6f6f6;
+            padding: 60px 40px 30px;
+            @include for-phonePr-only{
+                
+            }
+            i{
+                width: 70px;
+                height: 70px;
+                color: #666666;
+                background: $white;
+                text-align: center;
+                font-size: 35px;
+                line-height: 70px;
+                position: absolute;
+                left: 50%;
+                top: 0;
+                z-index: 99;
+                margin-left: -35px;
+                margin-top: -35px;
+                border: 1px solid #cccccc;
+                border-radius: 50%;
+                @include for-phonePr-only{
+                    font-size:20px;
+                    width: 50px;
+                    height: 50px;
+                    line-height: 2.5;
+                    top: 15px;
+                }
+                   
+                
+
+            }
+            h3{
+
+            }
+            p{
+
+            }
+        }
+    }
+    .form-area{
+        margin-top: 30px;
+
+        .contact-input{
+            width: 100%;
+            margin-bottom: 30px;
+            border: none;
+            border-bottom: 1px solid $bordercolor;
+            height: 45px;
+            color: $inputcolor;
+
+            &:focus{
+                
+                outline: none;
+            }
+        }
+        textarea{
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid $bordercolor;
+
+            &:focus{
+                outline: none;
+
+            }
+        }
+        .contact_btn{
+            margin-top: 20px;
+            color: white;
+            background: $green;
+            padding: 12px 30px;
+            overflow: hidden;
+            position: relative;
+
+
+        }
+    }
+}

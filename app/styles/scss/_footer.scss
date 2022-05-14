@@ -1,0 +1,15 @@
+.main-footer{
+    background: $banner_bg_color;
+
+    .copyright{
+        padding: 20px 0;
+        .copyright-col{
+            padding: 0 15px;
+            text-align: center;
+            p{
+                color: $footercolor;
+
+            }
+        }
+    }
+}

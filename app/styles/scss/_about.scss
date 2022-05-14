@@ -1,0 +1,59 @@
+.about{
+    padding: 120px 0 90px;
+    @include for-phonePr-only{
+        padding: 60px 0 30px;
+    }
+    @include for-phone-max-767{
+        padding: 60px 0 30px;
+
+    }
+    @include for-phoneLc-tabletPr{
+        padding: 60px 0 30px;
+    
+
+    }
+    .about_content{
+        .about_title{
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 800;
+
+        }
+        .about_text{
+            letter-spacing: 0.5px;
+            margin-bottom: 30px;
+            line-height: 1.7;
+
+        }
+        .button_area{
+            text-align: center;
+         
+            .btn_donload{
+                border: none;
+                background: $green ;
+                padding: 12px 30px;
+                text-transform: uppercase;
+                overflow: hidden;
+                color: $white;
+                border-radius: 10px;
+                margin-right: 10px;
+                position: relative;
+
+
+            }
+            .btn_resume{
+                background: $btnblack;
+                border: none;
+                border-radius: 10px;
+                color: $white;
+                padding: 12px 30px;
+                text-transform: uppercase;
+                overflow: hidden;
+                position: relative;
+            }
+
+        }
+        
+    }
+}

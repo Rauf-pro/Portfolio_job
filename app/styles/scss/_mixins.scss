@@ -1,0 +1,26 @@
+
+@mixin for-phonePr-only {
+    @media  (max-width: 480px) { @content; }
+  }
+  @mixin for-phone-max-767 {
+    @media  (min-width:481px) and (max-width: 767px) { @content; }
+  }
+
+  @mixin for-phoneLc-tabletPr {
+    @media  (min-width: 768px) and (max-width: 991px) { @content; }
+  }
+  @mixin for-992-1024 {
+    @media  (min-width: 992px) and (max-width: 1024px) { @content; }
+  }
+
+  @mixin for-desktop-1025-1199 {
+    @media  (min-width: 1025px) and (max-width: 1199px) { @content; }
+  }
+ 
+  @mixin for-desktop-up {
+    @media (min-width: 1200px) and (max-width:1399px)  { @content; }
+  }
+  @mixin for-big-desktop-up {
+    @media (min-width: 1400px) and (max-width: 1800) { @content; }
+  }
+ 

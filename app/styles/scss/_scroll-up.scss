@@ -1,0 +1,12 @@
+.scroll-up{
+    position: fixed;
+    right: 0.5%;
+    bottom: 10%;
+    cursor: pointer;
+    z-index: 9999;
+
+    .up-arrow{
+        width: 3rem;
+        height: 3rem;
+    }
+}

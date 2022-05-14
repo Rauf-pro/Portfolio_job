@@ -1,0 +1,111 @@
+.header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    
+    
+    
+
+    .navbar_top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 20px;
+        font-weight: 800;
+        background: transparent;
+        transition: all 0.5s ease-in-out;
+        @include for-phone-max-767{
+            font-size: 15px;
+        }
+
+        .logo{
+            font-size: 20px;
+            @include for-phonePr-only{
+                font-size: 15px;
+            }
+            @include for-phone-max-767{
+                font-size: 15px;
+            }
+            .logo_left{
+                color: $white;
+
+            }
+        }
+        .nav_list{
+            display: flex;
+            gap: 15px;
+            justify-content: end;
+            position: relative;
+            @include for-phonePr-only{
+                position: fixed;
+                left: -100%;
+                top: 4rem;
+                flex-direction: column;
+                background-color: $green;
+                width: 100%;
+               
+                text-align: center;
+                padding: 20px 0 20px 0;
+                transition: 0.3s;
+                box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+                
+                
+            }
+
+            .list_item{
+               
+                .nav_link{
+                    color: $white;
+                    transition: all 0.3s;
+                    &:hover{
+                        color: $green;
+
+                    }
+                    @include for-phonePr-only{
+                        font-size: 15px;
+                        color: black;
+                        &:hover{
+                            color: $white;
+                        }
+                    }
+                    
+    
+                }
+
+            }
+            
+            
+           
+        }
+        .active{
+            left: 0;
+        
+            
+
+            
+           
+
+        }
+        .mobile_menu{
+            cursor: pointer;
+            display: none;
+            @include for-phonePr-only{
+                display: block;
+            }
+                
+                
+                
+            .icon_bar{
+                color: $white;
+                    
+                
+            }
+
+        }
+    }
+}
